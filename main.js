@@ -24,6 +24,9 @@ app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 430});
 
+  //open dev tools
+  mainWindow.openDevTools();
+
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/Jinglepad.html');
 

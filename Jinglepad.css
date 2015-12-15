@@ -55,7 +55,8 @@ html, body{
    vertical-align: center;
    line-height: 20vw;
    text-align: center;
-
+   overflow-x: hidden;
+   overflow-y: hidden;
 }
 
 #buttons>span.playing{
@@ -63,7 +64,7 @@ html, body{
    background-color: #44FF44;
 }
 
-#buttons>span.error{
+#buttons>span.attention{
    border: 10px solid #DD2222;
    background-color: #FF4444;
 }
@@ -71,4 +72,8 @@ html, body{
 #buttons>span.active{
    border: 10px solid #FF2222;
    background-color: #FF4444;
+}
+
+audio{
+   display: none;
 }
