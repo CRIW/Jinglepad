@@ -72,7 +72,9 @@ function deactivate(jingle){
 function activate(number){
    if(activeJingle > 0){
       deactivate(activeJingle);
+      activeJingle = -1;
    }
    document.getElementById('buttons').children[number].className = "playing";
    audioNodes[number].play();
+   activeJingle = number;
 }
