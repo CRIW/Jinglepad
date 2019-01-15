@@ -141,6 +141,12 @@
                 },
                 mounted: function (){
                     console.log("created");
+                    this.jid.audio.addEventListener('timeupdate', () => this.currentTime = this.jid.audio.currentTime);
+                    this.jid.audio.addEventListener('ended', () => {this.jid.audio.currentTime = 0; this.playing = false;});
+                    if(!this.jid.picture){
+                        this.jid.color = `hsl(${110 + (Math.random()* 100)}deg,40%,50%)`;
+                    }
+                    this.title = this.jid.title;
                 },
                 beforeUpdate: function(){
                     if(this.title != this.jid.title){
