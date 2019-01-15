@@ -1,13 +1,7 @@
-# Jinglepad
+#Jinglepad
 
-# Done
-- GUI with 8 buttons
-- Status label
-- Progress bar
-- general idea
+Pretty easy drag an drop interface.
 
-# TODO
-- Create webaudio context with limiter and gain nodes
-- Load sound files
-- MIDI
-- Load and Save config
+Drag songs onto the grey surface or other songs to create samplers.
+
+Click to play, click to stop.
